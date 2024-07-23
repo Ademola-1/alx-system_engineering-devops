@@ -2,7 +2,7 @@
 # fixes a web server to run Nginx as the nginx user listening on port 8080.
 
 # set a user in the config by replace '#user' and it's value
-sed -i "s/#user ww-data/user nginx/' /etc/nginx/nginx.conf
+sed -i "s/#user ww-data/user nginx/" /etc/nginx/nginx.conf
 #replace port 80 with 8080 in the sites-available config
 sed -i "s/80/8080/g" /etc/nginx/sites-available/default
 # give owner permission to read and write to the config file
